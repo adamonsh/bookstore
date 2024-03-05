@@ -56,4 +56,4 @@ const book_structure = new mongoose.Schema(
   }
 );
 
-const Book = mongoose.model("Book", book_structure);
+export const Book = mongoose.model("Book", book_structure);
