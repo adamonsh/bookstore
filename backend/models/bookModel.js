@@ -16,7 +16,7 @@ const book_structure = new mongoose.Schema(
     },
     language: {
       type: String,
-      default: "English",
+      default: "Ingles",
     },
     edition: {
       type: Number,
@@ -25,7 +25,7 @@ const book_structure = new mongoose.Schema(
       type: String,
       default: "None",
     },
-    publication_year: {
+    publication_date: {
       type: Number,
     },
     genre: {
@@ -52,6 +52,12 @@ const book_structure = new mongoose.Schema(
     rating: {
       type: Number,
       default: -1,
+    },
+  },
+  {
+    added_by: {
+      type: String,
+      require: true,
     },
   }
 );
